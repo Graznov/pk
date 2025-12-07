@@ -1,0 +1,18 @@
+.head{
+    background: silver;
+
+    display: flex;
+
+    .head__logo{
+        img{
+            width: 120px;
+        }
+    }
+
+    .head__links{
+
+        ul{
+            display: flex;
+        }
+    }
+}
