@@ -1,18 +1,276 @@
-.head{
-    background: silver;
+/*.head{*/
+/*    display: flex;*/
 
+
+/*    position: fixed; !* Фиксирует элемент *!*/
+/*    top: 0; !* Прижимает к верхнему краю окна *!*/
+/*    left: 0; !* Прижимает к левому краю (опционально) *!*/
+/*    width: 100%; !* Растягивает на всю ширину *!*/
+/*    z-index: 1000; !* Убедись, что шапка выше других элементов *!*/
+/*    background-color: #a9a6a6; !* Важно задать фон, иначе контент будет просвечивать *!*/
+/*    box-shadow: 0 2px 5px rgba(0,0,0,0.1); !* Легкая тень для красоты (опционально) *!*/
+
+/*    .head_logo{*/
+/*        img{*/
+/*            width: 120px;*/
+/*        }*/
+/*    }*/
+
+/*    .head_links{*/
+
+
+/*        display: flex;*/
+/*        gap: 30px;*/
+
+/*        li{*/
+/*            list-style: none;*/
+
+/*            a{*/
+/*                text-decoration: none;*/
+/*            }*/
+/*        }*/
+
+
+/*    }*/
+/*}*/
+
+/* ===== ОБЩИЕ СТИЛИ HEADER ===== */
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 248, 240, 0.98); /* Кремовый оттенок под кожу */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 25px rgba(139, 69, 19, 0.15); /* Тень коричневого оттенка */
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: 2px solid #d4a574; /* Акцентный цвет под кожу */
+}
 
-    .head__logo{
-        img{
-            width: 120px;
-        }
+/* Уменьшаем высоту при скролле */
+.head.scrolled {
+    height: 70px;
+    box-shadow: 0 3px 15px rgba(139, 69, 19, 0.1);
+}
+
+/* ===== ЛОГОТИП ===== */
+.head_logo {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.head_logo:hover {
+    transform: scale(1.05);
+}
+
+.head_logo img {
+    height: 50px;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* ===== НАВИГАЦИЯ ===== */
+.head_links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.head_links li {
+    position: relative;
+}
+
+/* Стили для ссылок */
+.head_links a {
+    color: #5d4037; /* Темно-коричневый */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 4px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    position: relative;
+    letter-spacing: 0.3px;
+}
+
+/* Эффект при наведении */
+.head_links a:hover {
+    color: #d4a574; /* Золотисто-коричневый */
+}
+
+/* Активная ссылка */
+.head_links a.active {
+    color: #8b4513; /* Седло-коричневый */
+    font-weight: 700;
+}
+
+/* Подчеркивание при наведении */
+.head_links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #d4a574, #8b4513);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+.head_links a:hover::after,
+.head_links a.active::after {
+    width: 100%;
+}
+
+/* ===== БУРГЕР-МЕНЮ ДЛЯ МОБИЛЬНЫХ ===== */
+.menu_toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.menu_toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #5d4037;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* ===== ОТСТУП ДЛЯ КОНТЕНТА ===== */
+/* Добавь этот стиль в компонент, где отображается основной контент */
+.main-content {
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 1100px) {
+    .head_links {
+        gap: 20px;
     }
 
-    .head__links{
-
-        ul{
-            display: flex;
-        }
+    .head_links a {
+        font-size: 15px;
     }
 }
+
+@media (max-width: 900px) {
+    .head {
+        padding: 0 20px;
+    }
+
+    .menu_toggle {
+        display: block;
+    }
+
+    .head_links {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: rgba(255, 248, 240, 0.98);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0;
+        padding-top: 40px;
+        transition: left 0.4s ease;
+        box-shadow: 0 10px 30px rgba(139, 69, 19, 0.2);
+    }
+
+    .head_links.active {
+        left: 0;
+    }
+
+    .head_links li {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(139, 69, 19, 0.1);
+    }
+
+    .head_links a {
+        font-size: 18px;
+        padding: 15px 0;
+        display: block;
+        width: 100%;
+    }
+
+    /* Анимация бургера */
+    .menu_toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .menu_toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu_toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -8px);
+    }
+
+    .main-content {
+        padding-top: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .head {
+        height: 70px;
+        padding: 0 15px;
+    }
+
+    .head_logo img {
+        height: 40px;
+    }
+
+    .head_links {
+        top: 70px;
+        height: calc(100vh - 70px);
+    }
+
+    .main-content {
+        padding-top: 80px;
+    }
+}
+
+/* ===== АНИМАЦИЯ ПОЯВЛЕНИЯ ПУНКТОВ МЕНЮ ===== */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.head_links li {
+    animation: fadeInDown 0.5s ease forwards;
+    opacity: 0;
+}
+
+.head_links li:nth-child(1) { animation-delay: 0.1s; }
+.head_links li:nth-child(2) { animation-delay: 0.2s; }
+.head_links li:nth-child(3) { animation-delay: 0.3s; }
+.head_links li:nth-child(4) { animation-delay: 0.4s; }
+.head_links li:nth-child(5) { animation-delay: 0.5s; }
+.head_links li:nth-child(6) { animation-delay: 0.6s; }

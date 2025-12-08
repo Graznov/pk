@@ -2,8 +2,11 @@ import classNames from 'classnames/bind';
 import styles from './field.module.css';
 import Head from "./Components/Head/Head.tsx";
 import Basement from "./Components/Basement/Basement.tsx";
+import {Outlet} from "react-router-dom";
 
 const cx = classNames.bind(styles);
+
+
 
 function Field(){
 
@@ -12,7 +15,10 @@ function Field(){
 
             <Head/>
 
-            ______
+            <div className={cx('field_content')}>
+                <Outlet/>
+            </div>
+
 
             <Basement/>
 
