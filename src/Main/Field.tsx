@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './field.module.css';
 import Head from "./Components/Head/Head.tsx";
-import Basement from "./Components/Basement/Basement.tsx";
+// import Basement from "./Components/Basement/Basement.tsx";
 import {Outlet} from "react-router-dom";
 // import {useDispatch} from "react-redux";
 import {useAppSelector} from "./store/hooks.ts";
@@ -38,7 +38,7 @@ useEffect(()=>{
                     }
                 </div>
 
-                <Basement/>
+                {/*<Basement/>*/}
 
             {/*</div>*/}
 

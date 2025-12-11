@@ -8,23 +8,28 @@ function Home() {
 
     return (
         <div className={cx('home')}>
+            <div className={cx("content")}>
 
-            <div className="home_content">
-                <div className="home_content_Left">
-                    <div className="zagol">
-                        {TEMP_VALLUES.ZAGOL}
+                <div className={cx("home_content")}>
+                    <div className={cx("home_content_Left")}>
+                        <div className={cx("zagol")}>
+                            {TEMP_VALLUES.HOME.ZAGOL}
+                        </div>
+                        <div className={cx("text")}>
+                            {TEMP_VALLUES.HOME.LONG_TEXT}
+                        </div>
                     </div>
-                    <div className="text">
-                        {TEMP_VALLUES.LONG_TEXT}
+
+                    <div className={cx("home_content_Right")}>
+                        <div className={cx("text")}>
+                            {TEMP_VALLUES.HOME.LONG_TEXT}
+                        </div>
                     </div>
                 </div>
 
-                <div className="home_content_Right">
-                    <div className="text">
-                        {TEMP_VALLUES.LONG_TEXT}
-                    </div>
-                </div>
             </div>
+
+
 
         </div>
     )

@@ -7,8 +7,11 @@ function Basement() {
 
     return (
         <div className={cx('basement')}>
+            <div className={cx("content")}>
+                Basement
 
-            Basement
+            </div>
+
 
         </div>
     )

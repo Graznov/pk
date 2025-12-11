@@ -12,8 +12,6 @@ const Header = () => {
 
     const dispatch = useDispatch();
 
-
-
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 

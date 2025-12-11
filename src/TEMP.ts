@@ -1,4 +1,7 @@
 export const TEMP_VALLUES = {
-    LONG_TEXT:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-    ZAGOL:'Lorem Ipsum'
-}
+    HOME: {
+        LONG_TEXT: 'Рождение кожаного изделия начинается в тишине мастерской, где время течет не минутами, а движениями. Это не производство — это медленный диалог между руками мастера и памятью материала, который когда-то дышал. Пальцы читают историю, записанную в зернистой текстуре: где кожа упруга, где мягка, где несет на себе шрам от прежней жизни. Эти следы не скрывают — их вписывают в замысел, превращая в уникальную подпись природы. Совершенство здесь — не в безупречной гладкости, а в подлинности. Затем начинается танец инструментов. Нож режет с уважением, одним уверенным движением. Игла рождает шов — стежок за стежком, ровно и плотно, как слова в хорошем предложении. Это медитация в движении, где каждый этап — обязательная нота: вырезать, обработать, собрать, прошить. Здесь нет места спешке, только терпеливая последовательность.',
+        ZAGOL: 'Искусство кожи: тихая бесконечность в ладонях мастера'
+    }
+
+};
