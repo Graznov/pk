@@ -1,39 +1,3 @@
-/*.head{*/
-/*    display: flex;*/
-
-
-/*    position: fixed; !* Фиксирует элемент *!*/
-/*    top: 0; !* Прижимает к верхнему краю окна *!*/
-/*    left: 0; !* Прижимает к левому краю (опционально) *!*/
-/*    width: 100%; !* Растягивает на всю ширину *!*/
-/*    z-index: 1000; !* Убедись, что шапка выше других элементов *!*/
-/*    background-color: #a9a6a6; !* Важно задать фон, иначе контент будет просвечивать *!*/
-/*    box-shadow: 0 2px 5px rgba(0,0,0,0.1); !* Легкая тень для красоты (опционально) *!*/
-
-/*    .head_logo{*/
-/*        img{*/
-/*            width: 120px;*/
-/*        }*/
-/*    }*/
-
-/*    .head_links{*/
-
-
-/*        display: flex;*/
-/*        gap: 30px;*/
-
-/*        li{*/
-/*            list-style: none;*/
-
-/*            a{*/
-/*                text-decoration: none;*/
-/*            }*/
-/*        }*/
-
-
-/*    }*/
-/*}*/
-
 /* ===== ОБЩИЕ СТИЛИ HEADER ===== */
 .head {
     position: fixed;
@@ -67,12 +31,12 @@
 }
 
 .head_logo:hover {
-    transform: scale(1.05);
+    transform: scale(1.5);
 }
 
 .head_logo img {
-    height: 50px;
-    width: auto;
+    height: 100px;
+    /*width: 100px;*/
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 

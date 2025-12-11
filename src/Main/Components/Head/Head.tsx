@@ -1,56 +1,19 @@
 import classNames from 'classnames/bind';
 import styles from './head.module.css';
-//
-//
-// import {NavLink} from "react-router-dom";
-//
-const cx = classNames.bind(styles);
-//
-// function Head(){
-//
-//     return (
-//         <div className={cx('head')}>
-//
-//             <div className={cx('head_logo')}>
-//                 <img src="../../../assets/Temp/icon2.png" alt="logo"/>
-//             </div>
-//
-//             <ul className={cx('head_links')}>
-//                 <li>
-//                     <NavLink to={'/'}>На главную</NavLink>
-//                 </li>
-//                 <li>
-//                     <NavLink to={'/aboutme'}>Обо мне</NavLink>
-//                 </li>
-//                 <li>
-//                     <NavLink to={'/produce'}>Мои изделия</NavLink>
-//                 </li>
-//                 <li>
-//                     <NavLink to={'/service'}>Уход за кожаными изделиями</NavLink>
-//                 </li>
-//                 <li>
-//                     <NavLink to={'/fabrication'}>Процесс изготовления</NavLink>
-//                 </li>
-//                 <li>
-//                     <NavLink to={'/recommendation'}>Отзывы</NavLink>
-//                 </li>
-//             </ul>
-//
-//
-//
-//         </div>
-//     )
-//
-// }
-//
-// export default Head;
-
-
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import {useDispatch} from "react-redux";
+import {setWind} from "../../store/oneSlice.ts";
 
+
+const cx = classNames.bind(styles);
 
 const Header = () => {
+
+    const dispatch = useDispatch();
+
+
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -65,9 +28,9 @@ const Header = () => {
     }, []);
 
     // Закрытие меню при клике на ссылку (на мобильных)
-    const closeMenu = () => {
-        setIsMenuOpen(false);
-    };
+    // const closeMenu = () => {
+    //     setIsMenuOpen(false);
+    // };
 
     return (
         <header className={cx('head', { scrolled })}>
@@ -91,7 +54,11 @@ const Header = () => {
                     <NavLink
                         to={'/'}
                         className={({ isActive }) => isActive ? 'active' : ''}
-                        onClick={closeMenu}
+                        onClick={()=>{
+                                dispatch(setWind('title'))
+                                setIsMenuOpen(false);
+                            }
+                        }
                     >
                         На главную
                     </NavLink>
@@ -100,8 +67,11 @@ const Header = () => {
                     <NavLink
                         to={'/aboutme'}
                         className={({ isActive }) => isActive ? 'active' : ''}
-                        onClick={closeMenu}
-                    >
+                        onClick={()=>{
+                            dispatch(setWind('aboutme'))
+                            setIsMenuOpen(false);
+                        }
+                        }                    >
                         Обо мне
                     </NavLink>
                 </li>
@@ -109,8 +79,11 @@ const Header = () => {
                     <NavLink
                         to={'/produce'}
                         className={({ isActive }) => isActive ? 'active' : ''}
-                        onClick={closeMenu}
-                    >
+                        onClick={()=>{
+                            dispatch(setWind('produce'))
+                            setIsMenuOpen(false);
+                        }
+                        }                    >
                         Мои изделия
                     </NavLink>
                 </li>
@@ -118,8 +91,11 @@ const Header = () => {
                     <NavLink
                         to={'/service'}
                         className={({ isActive }) => isActive ? 'active' : ''}
-                        onClick={closeMenu}
-                    >
+                        onClick={()=>{
+                            dispatch(setWind('service'))
+                            setIsMenuOpen(false);
+                        }
+                        }                    >
                         Уход за кожаными изделиями
                     </NavLink>
                 </li>
@@ -127,8 +103,11 @@ const Header = () => {
                     <NavLink
                         to={'/fabrication'}
                         className={({ isActive }) => isActive ? 'active' : ''}
-                        onClick={closeMenu}
-                    >
+                        onClick={()=>{
+                            dispatch(setWind('fabrication'))
+                            setIsMenuOpen(false);
+                        }
+                        }                    >
                         Процесс изготовления
                     </NavLink>
                 </li>
@@ -136,8 +115,11 @@ const Header = () => {
                     <NavLink
                         to={'/recommendation'}
                         className={({ isActive }) => isActive ? 'active' : ''}
-                        onClick={closeMenu}
-                    >
+                        onClick={()=>{
+                            dispatch(setWind('recommendation'))
+                            setIsMenuOpen(false);
+                        }
+                        }                    >
                         Отзывы
                     </NavLink>
                 </li>

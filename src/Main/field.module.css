@@ -1,4 +1,12 @@
 .field{
+
+    /*.content{*/
+    /*    width: 1200px;*/
+
+    /*    border-left: 1px solid red;*/
+    /*    border-right: 1px solid red;*/
+
+    /*}*/
     .field_content{
         margin-top: 150px;
     }
