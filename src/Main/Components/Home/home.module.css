@@ -1,9 +1,32 @@
 .home{
-    background: blue;
-    height: 700px;
+    /*background: blue;*/
+    /*height: 700px;*/
 
-    width: 200px;
-    margin: 10px auto;
+    /*width: 200px;*/
+    /*margin: 10px auto;*/
 
-    font-size: 33px;
+    /*font-size: 33px;*/
+    width: 100%;
+    height: 100vh;
+
+    /*background-image: url("../../../../public/home_bcgr.jpg");*/
+
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), /* Затемнение 50% */
+            rgba(0, 0, 0, 0.5)
+    ),
+    url('../../../../public/home_bcgr.jpg');
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+
+    .home_content{
+
+        display: flex;
+        gap: 100px;
+
+
+    }
 }
