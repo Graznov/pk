@@ -21,25 +21,25 @@
         .home_content{
 
             display: flex;
-            gap: 100px;
+            gap: 70px;
 
             align-items: center;
             justify-content: space-evenly;
 
+            padding: 0 40px;
+
             .zagol{
-                font-size: 55px;
+                font-size: 35px;
                 color: #918c8c;
-                /*font-family: "Agency FB", serif ;*/
-                margin: 15px;
+                margin: 15px 0 30px 0;
                 text-align: right;
             }
 
             .text{
-                /*font-family: Calibri, serif;*/
-                font-size: 25px;
+                font-size: 17px;
                 color: #d4a574;
-                padding: 11px;
-
+                /*padding: 11px;*/
+                max-width: 550px;
                 text-align: justify;
                 text-justify: inter-word;
             }
@@ -49,14 +49,61 @@
 
     }
 
-    /*background-image: url("../../../../public/home_bcgr.jpg");*/
+}
 
+/* 900px */
+@media (max-width: 900px) {
+    .home {
+        .content {
+            height: auto;
+            min-height: 80vh;
+            padding: 60px 0;
 
+            .home_content {
+                flex-direction: column;
+                gap: 40px;
+                padding: 0 30px;
 
-    color: white;
+                .zagol {
+                    font-size: 28px;
+                    text-align: center;
+                    margin: 10px 0 20px 0;
+                }
 
+                .text {
+                    font-size: 16px;
+                    text-align: center;
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}
 
+/* 480px */
+@media (max-width: 480px) {
+    .home {
+        .content {
+            min-height: 70vh;
+            padding: 40px 0;
 
+            .home_content {
+                gap: 30px;
+                padding: 0 20px;
 
+                .zagol {
+                    font-size: 22px;
+                    margin: 5px 0 15px 0;
+                }
 
+                .text {
+                    font-size: 14px;
+                    max-width: 100%;
+                    text-align: left;
+                    line-height: 1.5;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
 }
