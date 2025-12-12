@@ -19,6 +19,9 @@ export const TEMP_VALLUES = {
     },
     FABRICATION: {
         ZAGOL:'Вот несколько примеров изготовления'
+    },
+    RECOMENDATION: {
+        ZAGOL:'Что обо мне говорят:'
     }
 
 };

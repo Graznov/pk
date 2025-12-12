@@ -32,96 +32,101 @@ const Header = () => {
 
     return (
         <header className={cx('head', { scrolled })}>
-            <div className={cx('head_logo')}>
-                <img src="../../../../public/Temp/PK_TEMP_LOGO.png" alt="Логотип кожевенного мастера" />
-            </div>
 
-            {/* Бургер-меню для мобильных */}
-            <button
-                className={cx('menu_toggle', { active: isMenuOpen })}
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                aria-label="Меню"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div className={cx('content')}>
 
-            <ul className={cx('head_links', { active: isMenuOpen })}>
-                <li>
-                    <NavLink
-                        to={'/'}
-                        className={({ isActive }) => isActive ? 'active' : ''}
-                        onClick={()=>{
-                                dispatch(setWind('title'))
+                <div className={cx('head_logo')}>
+                    <img src="../../../../public/Temp/PK_TEMP_LOGO.png" alt="Логотип кожевенного мастера" />
+                </div>
+
+                {/* Бургер-меню для мобильных */}
+                <button
+                    className={cx('menu_toggle', { active: isMenuOpen })}
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    aria-label="Меню"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul className={cx('head_links', { active: isMenuOpen })}>
+                    <li>
+                        <NavLink
+                            to={'/'}
+                            className={({ isActive }) => isActive ? 'active' : ''}
+                            onClick={()=>{
+                                    dispatch(setWind('title'))
+                                    setIsMenuOpen(false);
+                                }
+                            }
+                        >
+                            На главную
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to={'/aboutme'}
+                            className={({ isActive }) => isActive ? 'active' : ''}
+                            onClick={()=>{
+                                dispatch(setWind('aboutme'))
                                 setIsMenuOpen(false);
                             }
-                        }
-                    >
-                        На главную
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to={'/aboutme'}
-                        className={({ isActive }) => isActive ? 'active' : ''}
-                        onClick={()=>{
-                            dispatch(setWind('aboutme'))
-                            setIsMenuOpen(false);
-                        }
-                        }                    >
-                        Обо мне
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to={'/produce'}
-                        className={({ isActive }) => isActive ? 'active' : ''}
-                        onClick={()=>{
-                            dispatch(setWind('produce'))
-                            setIsMenuOpen(false);
-                        }
-                        }                    >
-                        Мои изделия
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to={'/service'}
-                        className={({ isActive }) => isActive ? 'active' : ''}
-                        onClick={()=>{
-                            dispatch(setWind('service'))
-                            setIsMenuOpen(false);
-                        }
-                        }                    >
-                        Уход за кожаными изделиями
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to={'/fabrication'}
-                        className={({ isActive }) => isActive ? 'active' : ''}
-                        onClick={()=>{
-                            dispatch(setWind('fabrication'))
-                            setIsMenuOpen(false);
-                        }
-                        }                    >
-                        Процесс изготовления
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to={'/recommendation'}
-                        className={({ isActive }) => isActive ? 'active' : ''}
-                        onClick={()=>{
-                            dispatch(setWind('recommendation'))
-                            setIsMenuOpen(false);
-                        }
-                        }                    >
-                        Отзывы
-                    </NavLink>
-                </li>
-            </ul>
+                            }                    >
+                            Обо мне
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to={'/produce'}
+                            className={({ isActive }) => isActive ? 'active' : ''}
+                            onClick={()=>{
+                                dispatch(setWind('produce'))
+                                setIsMenuOpen(false);
+                            }
+                            }                    >
+                            Мои изделия
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to={'/service'}
+                            className={({ isActive }) => isActive ? 'active' : ''}
+                            onClick={()=>{
+                                dispatch(setWind('service'))
+                                setIsMenuOpen(false);
+                            }
+                            }                    >
+                            Уход за изделиями
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to={'/fabrication'}
+                            className={({ isActive }) => isActive ? 'active' : ''}
+                            onClick={()=>{
+                                dispatch(setWind('fabrication'))
+                                setIsMenuOpen(false);
+                            }
+                            }                    >
+                            Процесс изготовления
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to={'/recommendation'}
+                            className={({ isActive }) => isActive ? 'active' : ''}
+                            onClick={()=>{
+                                dispatch(setWind('recommendation'))
+                                setIsMenuOpen(false);
+                            }
+                            }                    >
+                            Отзывы
+                        </NavLink>
+                    </li>
+                </ul>
+
+            </div>
         </header>
     );
 };
