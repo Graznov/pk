@@ -16,7 +16,7 @@
         margin: 0 auto;
 
         display: flex;
-        align-items: center;
+        /*align-items: center;*/
 
         .home_content{
 
@@ -55,9 +55,12 @@
             .videos{
 
                 /*width: 100%;*/
-                /*margin: 0 auto;*/
+                max-width: 1100px;
+                margin: 0 auto;
+                /*height: 100%;*/
+
                 display: flex;
-                /*gap: 30px;*/
+                gap: 30px;
                 justify-content: space-around;
 
                 .videos_item{
@@ -65,6 +68,16 @@
 
                     /*width: 400px;*/
                     /*height: 250px;*/
+                }
+
+                .item_One{
+                    align-self: flex-start;
+                }
+                .item_Two{
+                    align-self: center;
+                }
+                .item_Three{
+                    align-self: flex-end;
                 }
             }
 
