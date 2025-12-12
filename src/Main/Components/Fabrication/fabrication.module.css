@@ -20,11 +20,13 @@
 
         .home_content{
 
-            display: flex;
-            gap: 70px;
 
-            align-items: center;
-            justify-content: space-evenly;
+
+            /*display: flex;*/
+            /*gap: 70px;*/
+
+            /*align-items: center;*/
+            /*justify-content: space-evenly;*/
 
             padding: 0 40px;
 
@@ -48,6 +50,22 @@
                 text-justify: inter-word;
                 line-height: 1.3; /* Умножается на размер шрифта */
 
+            }
+
+            .videos{
+
+                /*width: 100%;*/
+                /*margin: 0 auto;*/
+                display: flex;
+                /*gap: 30px;*/
+                justify-content: space-around;
+
+                .videos_item{
+                    width: 40%;
+
+                    /*width: 400px;*/
+                    /*height: 250px;*/
+                }
             }
 
 
