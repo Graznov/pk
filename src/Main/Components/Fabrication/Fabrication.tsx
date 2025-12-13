@@ -19,25 +19,32 @@ function Fabrication() {
                     <div className={cx("videos")}>
 
 
-                        <iframe className={cx("videos_item item_One")} src="https://www.youtube.com/embed/y4fCbHMtvhc"
-                                title="Zip wallet / Кошелек на молнии из кожи от #wildleathercraft. Free pattern PDF."
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerPolicy="strict-origin-when-cross-origin"
-                                allowFullScreen></iframe>
+                        <div className={cx("videos_item item_One")}>
+                            <iframe  src="https://www.youtube.com/embed/y4fCbHMtvhc"
+                                     title="Zip wallet / Кошелек на молнии из кожи от #wildleathercraft. Free pattern PDF."
+                                     frameBorder="0"
+                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                     referrerPolicy="strict-origin-when-cross-origin"
+                                     allowFullScreen></iframe>
+                        </div>
 
-                        <iframe className={cx("videos_item item_Two")} src="https://www.youtube.com/embed/Er49UHlEnI0"
-                                title="Making a Bi-fold wallet from Pull-Up leather Tobacco by #wildleathercraft. Free pattern PDF."
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerPolicy="strict-origin-when-cross-origin"
-                                allowFullScreen></iframe>
+                        <div className={cx("videos_item item_Two")}>
+                            <iframe  src="https://www.youtube.com/embed/Er49UHlEnI0"
+                                     title="Making a Bi-fold wallet from Pull-Up leather Tobacco by #wildleathercraft. Free pattern PDF."
+                                     frameBorder="0"
+                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                     referrerPolicy="strict-origin-when-cross-origin"
+                                     allowFullScreen></iframe>
+                        </div>
 
-                        <iframe className={cx("videos_item item_Three")} src="https://www.youtube.com/embed/sBtuixpCZ_A"
-                                title="Making a Handmade Traditional Bifold Wallet." frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerPolicy="strict-origin-when-cross-origin"
-                                allowFullScreen></iframe>
+                        <div className={cx("videos_item item_Three")}>
+                            <iframe  src="https://www.youtube.com/embed/sBtuixpCZ_A"
+                                     title="Making a Handmade Traditional Bifold Wallet." frameBorder="0"
+                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                     referrerPolicy="strict-origin-when-cross-origin"
+                                     allowFullScreen></iframe>
+                        </div>
+
 
                     </div>
                 </div>

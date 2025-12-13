@@ -1,6 +1,7 @@
 import classNames from "classnames/bind";
 import styles from './recommendation.module.css'
 import {TEMP_VALLUES} from "../../../TEMP.ts";
+import Review from "./Review/Review.tsx";
 
 const cx = classNames.bind(styles)
 
@@ -13,6 +14,8 @@ function Recommendation() {
 
                     {TEMP_VALLUES.RECOMENDATION.ZAGOL}
                 </div>
+
+                <Review/>
 
 
 
