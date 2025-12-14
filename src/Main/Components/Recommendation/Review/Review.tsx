@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 import styles from './review.module.css'
-import {JSX} from "react";
+// import {JSX} from "react";
 // import {TEMP_VALLUES} from "../../../TEMP.ts";
 
 const cx = classNames.bind(styles)
@@ -19,7 +19,7 @@ interface cerdReviewProps {
 
 }
 
-function Review(props: cerdReviewProps): JSX.Element {
+function Review(props: cerdReviewProps) {
 
     return(
         <div className={cx('review')}>
