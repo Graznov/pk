@@ -36,7 +36,7 @@ const Header = () => {
             <div className={cx('content')}>
 
                 <div className={cx('head_logo')}>
-                    <img src="../../../../public/Temp/PK_TEMP_LOGO.png" alt="Логотип кожевенного мастера" />
+                    <img src="https://github.com/Graznov/pk/blob/dev/public/Temp/PK_TEMP_LOGO.png?raw=true" alt="Логотип кожевенного мастера" />
                 </div>
 
                 {/* Бургер-меню для мобильных */}

@@ -12,7 +12,7 @@ function Aboutme() {
 
                 <div className={cx("home_content")}>
                     <div className={cx("home_content_Left")}>
-                        <img className={cx("home_content_Left_photo")} src="../../../../public/Temp/avatar.png" alt="photo"/>
+                        <img className={cx("home_content_Left_photo")} src="https://github.com/Graznov/pk/blob/dev/public/Temp/avatar.png?raw=true" alt="photo"/>
                         <div className={cx("zagol")}>
                             {TEMP_VALLUES.ABOUTME.ZAGOL}
                         </div>
