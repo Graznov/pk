@@ -48,98 +48,106 @@ const VALLUES_DATA_TEMP: VALLUE[] = [
     },    {
         id: '004',
         category: 'for_documents',
-        name: 'string',
-        productionTime: 'string',
-        description: 'string',
-        image_url: [],
+        name: 'Портмоне',
+        productionTime: '5 дней',
+        description: 'Портмоне премиум-класса — это безупречное сочетание стиля, функциональности и долговечности. Изготовленное из натуральной кожи высшего качества, оно отличается благородной фактурой, приятной на ощупь и устойчивостью к износу. Практичный дизайн включает несколько отделений для банковских карт, прозрачные кармашки для документов, а также секции для купюр и мелочи. Удобная застёжка надёжно защищает содержимое. Идеальный выбор для делового человека, ценящего порядок и элегантность в деталях. Портмоне станет стильным аксессуаром на каждый день, подчеркивающим ваш безупречный вкус и статус.',
+        image_url: ['https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/4.1.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/4.2.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/4.3.jpg?raw=true'],
         price: 3800, // текущая цена
     },    {
         id: '005',
         category: 'for_documents',
-        name: 'string',
-        productionTime: 'string',
-        description: 'string',
-        image_url: [],
+        name: 'Ремень',
+        productionTime: '2 дня',
+        description: 'Представляем мужской ремень премиум-класса, созданный для тех, кто ценит безупречный стиль и надёжность. Изготовлен из натуральной бычьей кожи высшего качества, отличающейся долговечностью и благородным блеском. Классическая пряжка из литой стали с матовым покрытием обеспечивает надёжную фиксацию и изысканный внешний вид. Универсальный дизайн в тёмно-коричневом цвете делает этот ремень идеальным дополнением как к строгому деловому костюму, так и к повседневным брюкам или джинсам. Точная строчка по краям подчеркивает аккуратность и качество исполнения. Идеальная длина регулируется благодаря удобной системе отверстий. Этот ремень станет верным аксессуаром на долгие годы, подчеркивая солидность и уверенный вкус своего владельца.',
+        image_url: ['https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/5.1.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/5.2.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/5.3.jpg?raw=true'],
         price: 4100, // текущая цена
     },    {
         id: '006',
         category: 'for_documents',
-        name: 'string',
-        productionTime: 'string',
-        description: 'string',
-        image_url: [],
+        name: 'Женская сумочка',
+        productionTime: '5 дней',
+        description: 'Изящная женская сумочка сочетает в себе утончённую эстетику и безупречную функциональность. Модель выполнена из мягкой, но прочной натуральной кожи с деликатным тиснением, что придаёт аксессуару благородную текстуру и устойчивость к повседневным нагрузкам. Лаконичный дизайн дополнен изысканной фурнитурой золотистого оттенка и удобным плечевым ремнём, регулируемым по длине.\n' +
+            '\n' +
+            'Внутреннее пространство продумано до мелочей: имеется основное отделение на надёжной молнии, карманы для телефона, ключей и документов, а также специальный кармашек для мелких вещей. Сумочка легко трансформируется из повседневной в нарядную, идеально дополняя как деловой образ, так и вечерний наряд. Это не просто аксессуар, а гармония элегантности и практичности, созданная для современной женщины.',
+        image_url: ['https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/6.1.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/6.2.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/6.3.jpg?raw=true'],
         price: 3500, // текущая цена
     },    {
         id: '007',
         category: 'for_documents',
-        name: 'string',
-        productionTime: 'string',
-        description: 'string',
-        image_url: [],
+        name: 'Сумка-бананка',
+        productionTime: '5 дней',
+        description: 'Сумка-бананка — это стильный и практичный аксессуар, который уже стал современной классикой. Её узнаваемый выгнутый силуэт и минималистичный дизайн делают её идеальным выбором для активной городской жизни. Модель выполнена из лёгкого и прочного водоотталкивающего материала, который сохраняет форму и легко чистится.\n' +
+            '\n' +
+            'Сумка оснащена удобным регулируемым ремнём, позволяющим носить её через плечо или на груди для максимального комфорта и безопасности. Объёмное основное отделение закрывается надёжной молнией, внутри есть карман для мелких предметов. Бананка прекрасно сочетается с кэжуал-луками, спортивным стилем и уличной модой. Это не просто сумка, а символ свободы, динамики и современного отношения к жизни.',
+        image_url: ['https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/7.1.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/7.2.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/7.3.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/7.4.jpg?raw=true'],
         price: 4600, // текущая цена
     },    {
         id: '008',
         category: 'for_documents',
-        name: 'string',
-        productionTime: 'string',
-        description: 'string',
-        image_url: [],
+        name: 'Сумка-бананка 2.1',
+        productionTime: '5 дней',
+        description: 'Сумка-бананка** — твой идеальный спутник для динамичной городской жизни. Узнаваемый изогнутый силуэт, лаконичный дизайн и ультралёгкие материалы создают неповторимый образ свободы и стиля. Сшита из прочного нейлона с водоотталкивающей пропиткой — не боится внезапного дождя и ежедневной эксплуатации.\n' +
+            '\n' +
+            'Удобный регулируемый ремень позволяет носить сумку через плечо или на груди, освобождая руки. Вместительное основное отделение с надёжной молнией и внутренний карман-сетка для мелочей обеспечат идеальный порядок внутри. Идеально дополняет casual- и sport-chic образы, подчёркивая твой современный и практичный подход к моде. Выбери свой цвет — и вперёд, навстречу новым впечатлениям!',
+        image_url: ['https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/8.1.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/8.2.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/8.3.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/8.4.jpg?raw=true'],
         price: 3700, // текущая цена
     },    {
         id: '009',
         category: 'for_documents',
-        name: 'string',
-        productionTime: 'string',
-        description: 'string',
-        image_url: [],
+        name: 'Ремень муской',
+        productionTime: '3 дня',
+        description: 'Мужской ремень классического кроя** — аксессуар, в котором безупречный стиль встречается с высочайшим качеством. Изготовлен из плотной натуральной кожи бычка с гладкой финишной отделкой, устойчивой к истиранию и деформации. Литая пряжка из матового цинкового сплава обеспечивает надёжную фиксацию и добавляет лаконичный акцент.\n' +
+            '\n' +
+            'Универсальная ширина 3,5 см и тёмно-коричневый цвет делают ремень идеальным дополнением к деловому костюму, брюкам чинос или джинсам. Точная контурная строчка подчёркивает чёткие линии и долговечность. Регулируется по длине с помощью аккуратных перфорированных отверстий. Это не просто ремень — это инвестиция в образ солидного и уверенного в себе мужчины. Практичность, элегантность и долговечность в каждой детали.',
+        image_url: ['https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/9.1.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/9.2.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/9.3.jpg?raw=true'],
         price: 4500, // текущая цена
     },    {
         id: '010',
         category: 'for_documents',
-        name: 'string',
-        productionTime: 'string',
-        description: 'string',
-        image_url: [],
+        name: 'Мужской ремень',
+        productionTime: '4 дня',
+        description: '**Мужской ремень из натуральной кожи** — эталон сдержанной элегантности. Плотная кожа бычка, матовая литая пряжка, аккуратная строчка. Идеальная ширина 3,5 см сочетается с костюмом, джинсами, брюками. Тёмно-коричневый цвет универсален. Надёжность, комфорт, стиль — для уверенного мужского образа на каждый день.',
+        image_url: ['https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/10.1.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/10.2.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/10.3.jpg?raw=true'],
         price: 2700, // текущая цена
     },    {
         id: '011',
         category: 'for_documents',
-        name: 'string',
-        productionTime: 'string',
-        description: 'string',
-        image_url: [],
+        name: 'Браслет',
+        productionTime: '2 дня',
+        description: '**Мужской браслет из чёрного силикона** — стильный и функциональный аксессуар для активной жизни. Лёгкий, гибкий, устойчивый к влаге и износу. Универсальный минималистичный дизайн сочетается с повседневной и спортивной одеждой. Незаметен в носке, но подчёркивает собранность и современный подход к деталям. Идеальный выбор для тех, кто ценит практичность и лаконичный стиль.',
+        image_url: ['https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/11.1.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/11.2.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/11.3.jpg?raw=true'],
         price: 3400, // текущая цена
     },    {
         id: '012',
         category: 'for_documents',
-        name: 'string',
-        productionTime: 'string',
-        description: 'string',
-        image_url: [],
+        name: 'Женская сумочка',
+        productionTime: '7 дней',
+        description: '**Женская сумочка из мягкой нубуковой кожи** — элегантность в каждой детали. Удобный размер, регулируемый ремешок, изысканная фурнитура под золото. Внутри — продуманная организация: отделения для телефона, документов, мелочей. Идеально дополняет образ от делового до повседневного. Стильный акцент, который говорит о вашем безупречном вкусе.',
+        image_url: ['https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/12.1.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/12.2.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/12.3.jpg?raw=true'],
         price: 3000, // текущая цена
     },    {
         id: '013',
         category: 'for_documents',
-        name: 'string',
-        productionTime: 'string',
-        description: 'string',
-        image_url: [],
+        name: 'Женская сумочка',
+        productionTime: '4 дня',
+        description: '**Женская сумочка-кроссбод** из плотной текстурированной кожи — идеальный баланс стиля и практичности. Удобный длинный ремень позволяет носить её через плечо или на груди. Вместительное основное отделение с внутренними карманами обеспечивает порядок. Лаконичный дизайн с контрастной строчкой подходит для любого повседневного образа. Элегантная, лёгкая, функциональная — ваша идеальная спутница на каждый день.',
+        image_url: ['https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/13.1.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/13.2.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/13.3.jpg?raw=true'],
         price: 4100, // текущая цена
     },    {
         id: '014',
         category: 'for_documents',
-        name: 'string',
-        productionTime: 'string',
-        description: 'string',
-        image_url: [],
+        name: 'Женская сумочка',
+        productionTime: '4 дня',
+        description: '**Классическая женская сумочка-конверт** из гладкой лакированной кожи. Минималистичный дизайн с изящной металлической застёжкой. Компактный, но достаточно вместительный для телефона, ключей, карт и косметики. Утончённый аксессуар, который идеально дополнит как деловой костюм, так и вечернее платье. Элегантность в лаконичной форме — для уверенной и стильной женщины.',
+        image_url: ['https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/14.1.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/14.2.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/14.3.jpg?raw=true'],
         price: 4000, // текущая цена
     },    {
         id: '015',
         category: 'for_documents',
-        name: 'string',
-        productionTime: 'string',
-        description: 'string',
-        image_url: [],
+        name: 'Мужской ремень',
+        productionTime: '3 дня',
+        description: '**Мужской кожаный ремень** для безупречного стиля. Изготовлен из прочной натуральной кожи с матовой отделкой. Классическая пряжка из литого металла обеспечивает надежную фиксацию. Универсальная ширина 3,5 см подходит к джинсам, брюкам и костюмам. Сдержанный дизайн и аккуратная строчка подчеркивают качество. Практичный аксессуар, который завершит ваш образ с достоинством.',
+        image_url: ['https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/15.1.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/15.2.jpg?raw=true', 'https://github.com/Graznov/pk/blob/dev/public/Temp/Vallue/15.3.jpg?raw=true'],
         price: 5500, // текущая цена
     },    {
         id: '016',
