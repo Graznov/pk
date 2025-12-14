@@ -1,17 +1,289 @@
-.review{
+/*.review{*/
 
+/*    margin-top: 150px;*/
+/*    background: #f3f1ef;*/
+/*    width: 280px;*/
+/*    height: 380px;*/
+/*    position: relative;*/
+
+/*    .review_photo {*/
+/*        position: absolute;*/
+/*        left: 50%;*/
+/*        top: 0;*/
+/*        transform: translate(-50%, -50%);*/
+/*        width: 150px; !* задайте нужный размер *!*/
+/*        height: 150px;*/
+/*        border-radius: 50%; !* это ключевое свойство *!*/
+/*        overflow: hidden; !* обрезает всё, что выходит за круг *!*/
+/*        border: 3px solid wheat;*/
+
+/*        img {*/
+/*            width: 100%;*/
+/*            height: 100%;*/
+/*            object-fit: cover; !* важно: сохраняет пропорции и заполняет круг *!*/
+/*        }*/
+/*    }*/
+
+/*    .review_text{*/
+/*        position: absolute;*/
+/*        top: 150px;*/
+/*        left: 10px;*/
+/*        right: 10px;*/
+/*        !*transform: translate(-50%, -50%);*!*/
+/*        font-size: 17px;*/
+/*        text-justify: inter-word;*/
+/*        p{*/
+/*            overflow: auto;*/
+/*        }*/
+
+/*    }*/
+
+/*    .review_name{*/
+/*        position: absolute;*/
+/*        bottom: 10px;*/
+/*        left: 50%;*/
+/*        transform: translate(-50%, -50%);*/
+
+/*        font-size: 21px;*/
+/*    }*/
+
+
+
+
+
+/*}*/
+
+/*!* 900px *!*/
+/*@media (max-width: 900px) {*/
+/*    .review{*/
+
+/*    }*/
+/*}*/
+
+/*!* 480px *!*/
+/*@media (max-width: 480px) {*/
+/*    .review{*/
+
+/*    }*/
+/*}*/
+
+
+.review {
+    margin-top: 150px;
+    background: #f3f1ef;
+    width: 280px;
+    height: 380px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    .review_photo {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid #f3f1ef;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .review_text {
+        position: absolute;
+        top: 100px; /* уменьшил отступ для адаптива */
+        left: 15px;
+        right: 15px;
+        bottom: 50px; /* место для имени */
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+
+        /* Свойства для обрезки текста */
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 8; /* сколько строк показывать */
+        -webkit-box-orient: vertical;
+        max-height: calc(1.5em * 8); /* 8 строк * line-height */
+        transition: all 0.3s ease;
+
+        /* Дополнительно для Firefox */
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        -moz-line-clamp: 8;
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .review_name {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        text-align: center;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    /* Hover эффекты */
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+        .review_photo img {
+            transform: scale(1.05);
+        }
+
+        .review_text {
+            -webkit-line-clamp: unset; /* снимаем ограничение строк */
+            max-height: 260px; /* или любое другое значение */
+            overflow-y: auto; /* добавляем прокрутку если нужно */
+            -webkit-line-clamp: initial; /* для старых браузеров */
+        }
+    }
 }
 
 /* 900px */
 @media (max-width: 900px) {
-    .review{
+    .review {
+        margin-top: 130px;
+        width: 260px;
+        height: 360px;
 
+        .review_photo {
+            width: 130px;
+            height: 130px;
+            border-width: 4px;
+        }
+
+        .review_text {
+            top: 90px;
+            left: 12px;
+            right: 12px;
+            font-size: 15px;
+            -webkit-line-clamp: 7;
+            max-height: calc(1.5em * 7);
+        }
+
+        .review_name {
+            font-size: 17px;
+            bottom: 12px;
+        }
+
+        &:hover .review_text {
+            max-height: 240px;
+        }
+    }
+}
+
+/* 768px (дополнительный брейкпоинт) */
+@media (max-width: 768px) {
+    .review {
+        width: 240px;
+        height: 340px;
+        margin-top: 120px;
+
+        .review_photo {
+            width: 120px;
+            height: 120px;
+        }
+
+        .review_text {
+            top: 80px;
+            font-size: 14px;
+            -webkit-line-clamp: 6;
+            max-height: calc(1.5em * 6);
+        }
+
+        &:hover .review_text {
+            max-height: 220px;
+        }
     }
 }
 
 /* 480px */
 @media (max-width: 480px) {
-    .review{
+    .review {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        min-height: 400px;
+        margin: 130px auto 0;
 
+        .review_photo {
+            width: 140px;
+            height: 140px;
+            border-width: 5px;
+        }
+
+        .review_text {
+            position: relative;
+            top: 80px;
+            margin-bottom: 50px;
+            padding: 0 20px;
+            left: 0;
+            right: 0;
+            -webkit-line-clamp: 6;
+            max-height: calc(1.5em * 6);
+        }
+
+        .review_name {
+            position: relative;
+            bottom: auto;
+            top: 90px;
+            margin-bottom: 20px;
+            transform: none;
+            left: 0;
+        }
+
+        &:hover .review_text {
+            max-height: 250px;
+        }
+    }
+}
+
+/* 360px (для самых маленьких экранов) */
+@media (max-width: 360px) {
+    .review {
+        max-width: 280px;
+        min-height: 380px;
+
+        .review_photo {
+            width: 120px;
+            height: 120px;
+        }
+
+        .review_text {
+            font-size: 14px;
+            top: 70px;
+            padding: 0 15px;
+            -webkit-line-clamp: 5;
+            max-height: calc(1.5em * 5);
+        }
+
+        .review_name {
+            top: 80px;
+            font-size: 16px;
+        }
+
+        &:hover .review_text {
+            max-height: 200px;
+        }
     }
 }
