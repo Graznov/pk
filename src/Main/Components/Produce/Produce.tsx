@@ -7,7 +7,20 @@ function Produce() {
 
     return(
         <div className={cx('produce')}>
-            Produce
+            <div className={cx("content")}>
+                Produce
+
+                <div className={cx("produce_zagol")}>
+                    Мои изделия...
+                </div>
+
+                <div className={cx('produce_card')}>
+                    {
+
+                    }
+                </div>
+
+            </div>
         </div>
     )
 }
