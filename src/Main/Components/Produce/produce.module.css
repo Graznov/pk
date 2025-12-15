@@ -41,6 +41,8 @@
 
             height: max-content;
 
+            overflow: scroll;
+
         }
 
     }
