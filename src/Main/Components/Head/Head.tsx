@@ -30,12 +30,48 @@ const Header = () => {
     //     setIsMenuOpen(false);
     // };
 
+    const clickLogo = () => {
+
+        console.log('click logo');
+        fetch(`http://localhost:3000/user`, {
+            method: 'GET', // Указываем метод GET
+            headers: {
+                'Content-Type': 'application/json', // Указываем тип содержимого
+                // 'Authorization': headersToken // Если требуется авторизация
+            },
+            credentials: "include",
+        })
+            .then((response) => {
+
+                if (!response.ok) {
+
+                    throw new Error(`Ошибка HTTP: ${response.status} ${response.statusText}`)
+                }
+
+
+                return response.json()
+            })
+            .then(data=>{
+
+                console.log(data)
+
+
+            })
+            .catch(error => {
+
+                console.error('Fetch error:', error);
+
+            });
+    }
+
     return (
         <header className={cx('head', { scrolled })}>
 
             <div className={cx('content')}>
 
-                <div className={cx('head_logo')}>
+                <div
+                    className={cx('head_logo')}
+                    onClick={clickLogo}>
                     <img src="https://github.com/Graznov/pk/blob/dev/public/Temp/PK_TEMP_LOGO.png?raw=true" alt="Логотип кожевенного мастера" />
                 </div>
 
